@@ -1,0 +1,37 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "eslint-config-prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": true,
+        "jsxSingleQuote": false,
+        "bracketSpacing": true,
+        "htmlWhitespaceSensitivity": "css",
+        "insertPragma": false,
+        "jsxBracketSameLine": false,
+        "printWidth": 80,
+        "proseWrap": "always",
+        "quoteProps": "as-needed",
+        "requirePragma": false,
+        "singleQuote": true,
+        "tabWidth": 2
+      }
+    ]
+  }
+}
