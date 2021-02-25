@@ -8,9 +8,7 @@ module.exports = {
     'airbnb',
   ],
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
+    ecmaFeatures: { jsx: true },
     ecmaVersion: 12,
     sourceType: 'module',
   },
@@ -18,7 +16,6 @@ module.exports = {
     'react',
   ],
   rules: {
-
     'react/jsx-uses-react': 1,
     'react/jsx-uses-vars': 1,
     'no-console': 'off',
@@ -32,11 +29,13 @@ module.exports = {
     'jsx-quotes': [ 2, 'prefer-single' ],
     'comma-spacing': [ 'error', { before: false, after: true } ],
     'object-curly-spacing': [ 'error', 'always' ],
+    'object-curly-newline': [ 'error', { multiline: true } ],
     'array-bracket-spacing': [ 'error', 'always' ],
     'react/self-closing-comp': [ 'error', {
       component: true,
       html: true,
     } ],
     'react/jsx-filename-extension': [ 1, { extensions: [ '.js', '.jsx' ] } ],
+    'arrow-parens': [ 'error', 'as-needed' ],
   },
 };
